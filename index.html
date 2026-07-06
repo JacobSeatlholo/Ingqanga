@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ingqanga — Handmade Leather, South Africa</title>
+<meta name="description" content="Ingqanga by NYRAK Leather. Full-grain leather cut, tooled and saddle-stitched by hand in South Africa. Backpacks, satchels, waist bags, wallets and cowrie jewellery. Order on WhatsApp." />
+<meta property="og:title" content="Ingqanga — Handmade Leather" />
+<meta property="og:description" content="Full-grain leather, stitched by hand, marked with African soul." />
+<meta property="og:image" content="./assets/hero-set.jpeg" />
+<meta name="theme-color" content="#241610" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+/* ==== TOKENS ==== */
+:root{
+  --hide:#241610;        /* roasted leather, near-black brown */
+  --hide-2:#3A2417;      /* raised brown */
+  --tan:#C07C40;         /* signature tan leather */
+  --tan-lo:#9A5F2E;
+  --indigo:#20456B;      /* accent — their navy bag / African indigo */
+  --indigo-lo:#16324f;
+  --ochre:#D6A24E;       /* warm gold */
+  --parch:#E9DEC9;       /* raw parchment */
+  --cowrie:#F4ECDC;      /* shell white */
+  --line:rgba(244,236,220,.16);
+  --ff-d:'Instrument Serif', Georgia, serif;
+  --ff-b:'Archivo', system-ui, sans-serif;
+  --maxw:1220px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--hide); color:var(--cowrie);
+  font-family:var(--ff-b); font-weight:400; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--ff-d);font-weight:400;line-height:1;letter-spacing:-.01em}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(20px,5vw,56px)}
+.eyebrow{
+  font-size:.72rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--ochre);display:inline-flex;align-items:center;gap:.7em;
+}
+.eyebrow svg{width:14px;height:14px;opacity:.9}
+
+/* ==== NAV ==== */
+header{position:sticky;top:0;z-index:50;
+  background:rgba(36,22,16,.78);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{font-family:var(--ff-d);font-size:1.7rem;letter-spacing:.02em;line-height:1}
+.brand small{display:block;font-family:var(--ff-b);font-size:.52rem;letter-spacing:.42em;
+  text-transform:uppercase;color:var(--tan);margin-top:-2px}
+.nav-links{display:flex;gap:2rem;align-items:center}
+.nav-links a{font-size:.82rem;letter-spacing:.04em;color:var(--parch);opacity:.85;transition:opacity .2s}
+.nav-links a:hover{opacity:1;color:var(--ochre)}
+.wa-btn{display:inline-flex;align-items:center;gap:.5em;
+  background:var(--tan);color:var(--hide);font-weight:600;font-size:.82rem;
+  padding:.62em 1.15em;border-radius:2px;transition:background .2s,transform .2s}
+.wa-btn:hover{background:var(--ochre);transform:translateY(-1px)}
+.wa-btn svg{width:15px;height:15px}
+.burger{display:none;background:none;border:0;color:var(--cowrie);cursor:pointer;padding:6px}
+.burger svg{width:26px;height:26px}
+
+/* ==== HERO ==== */
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;
+  overflow:hidden}
+.hero-img{position:absolute;inset:0}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.hero-img::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(36,22,16,.55) 0%,rgba(36,22,16,.15) 38%,rgba(36,22,16,.9) 100%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding-bottom:clamp(40px,7vw,80px)}
+.hero h1{font-size:clamp(4.2rem,15vw,12rem);letter-spacing:-.02em;margin:.18em 0 .1em}
+.hero .lede{font-size:clamp(1.05rem,2.2vw,1.45rem);max-width:38ch;color:var(--parch);
+  font-style:italic;font-family:var(--ff-d);line-height:1.3}
+.hero .sub{max-width:44ch;margin-top:1.1rem;color:rgba(244,236,220,.82);font-size:.98rem}
+.hero-cta{display:flex;gap:.9rem;margin-top:1.8rem;flex-wrap:wrap}
+.btn-ghost{border:1px solid var(--parch);color:var(--parch);padding:.72em 1.3em;
+  border-radius:2px;font-size:.86rem;font-weight:500;transition:.2s}
+.btn-ghost:hover{background:var(--parch);color:var(--hide)}
+
+/* ==== GLYPH RULE ==== */
+.glyph-rule{display:flex;align-items:center;gap:1.4rem;color:var(--tan);
+  padding:clamp(34px,6vw,60px) 0}
+.glyph-rule .ln{height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--line),transparent)}
+.glyph-rule svg{width:clamp(120px,26vw,220px);height:auto;opacity:.85}
+
+/* ==== STORY ==== */
+.story{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,5vw,72px);
+  align-items:center;padding:clamp(30px,6vw,60px) 0}
+.story h2{font-size:clamp(2.4rem,5.5vw,4.2rem);margin-bottom:.5em}
+.story h2 em{font-style:italic;color:var(--ochre)}
+.story p{color:rgba(244,236,220,.82);max-width:46ch;margin-bottom:1.1rem}
+.story .facts{display:flex;gap:2.4rem;margin-top:1.8rem;flex-wrap:wrap}
+.story .facts b{font-family:var(--ff-d);font-size:2.2rem;color:var(--tan);display:block;line-height:1}
+.story .facts span{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--parch);opacity:.7}
+.story-media{position:relative}
+.story-media img{border-radius:3px;width:100%;object-fit:cover;aspect-ratio:4/5}
+.story-media .stamp{position:absolute;right:-14px;bottom:-14px;width:38%;
+  border:6px solid var(--hide);border-radius:3px;box-shadow:0 18px 40px rgba(0,0,0,.4)}
+
+/* ==== COLLECTION ==== */
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;
+  gap:1rem;flex-wrap:wrap;margin-bottom:clamp(26px,4vw,44px)}
+.section-head h2{font-size:clamp(2.6rem,6vw,5rem)}
+.section-head p{max-width:30ch;color:rgba(244,236,220,.7);font-size:.92rem}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(14px,1.6vw,22px)}
+.card{position:relative;overflow:hidden;border-radius:3px;background:var(--hide-2);
+  grid-column:span 2;isolation:isolate}
+.card.wide{grid-column:span 4}
+.card.tall .ph{aspect-ratio:3/4}
+.card .ph{aspect-ratio:4/5;overflow:hidden}
+.card.wide .ph{aspect-ratio:16/11}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.card:hover .ph img{transform:scale(1.06)}
+.card .body{position:absolute;inset:auto 0 0 0;z-index:2;padding:clamp(16px,2vw,26px);
+  background:linear-gradient(0deg,rgba(20,12,8,.92) 0%,rgba(20,12,8,.5) 60%,transparent 100%)}
+.card h3{font-size:clamp(1.5rem,2.6vw,2.3rem);margin-bottom:.15em}
+.card .desc{font-size:.84rem;color:rgba(244,236,220,.78);max-width:42ch;margin-bottom:.9rem}
+.card .order{display:inline-flex;align-items:center;gap:.5em;font-size:.78rem;font-weight:600;
+  letter-spacing:.03em;color:var(--hide);background:var(--ochre);padding:.55em 1em;border-radius:2px;
+  transition:.2s}
+.card .order:hover{background:var(--cowrie)}
+.card .order svg{width:14px;height:14px}
+.card .tagpx{position:absolute;top:14px;left:14px;z-index:2;font-size:.64rem;letter-spacing:.18em;
+  text-transform:uppercase;background:rgba(36,22,16,.7);border:1px solid var(--line);
+  color:var(--parch);padding:.4em .7em;border-radius:2px;backdrop-filter:blur(4px)}
+
+/* ==== CRAFT ==== */
+.craft{background:var(--indigo-lo);border-block:1px solid var(--line);
+  margin-top:clamp(40px,7vw,90px)}
+.craft .wrap{padding-block:clamp(48px,8vw,100px)}
+.craft h2{font-size:clamp(2.4rem,5.5vw,4.4rem);max-width:16ch;margin-bottom:.4em}
+.craft h2 em{font-style:italic;color:var(--ochre)}
+.craft .intro{color:rgba(244,236,220,.82);max-width:52ch;margin-bottom:clamp(28px,4vw,48px)}
+.craft-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,26px)}
+.craft-tile img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:3px}
+.craft-tile h3{font-size:1.3rem;margin:.8rem 0 .25rem}
+.craft-tile p{font-size:.84rem;color:rgba(244,236,220,.72)}
+
+/* ==== FOUNDERS ==== */
+.founders .wrap{padding-block:clamp(48px,8vw,96px)}
+.founders h2{font-size:clamp(2.4rem,5.5vw,4.2rem);margin-bottom:.3em}
+.founders .lede{color:rgba(244,236,220,.75);max-width:50ch;margin-bottom:clamp(28px,4vw,48px)}
+.f-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(18px,3vw,40px)}
+.f-card{background:var(--hide-2);border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.f-photo{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;
+  background:
+    repeating-linear-gradient(135deg,rgba(192,124,64,.06) 0 14px,transparent 14px 28px),
+    radial-gradient(circle at 50% 40%,var(--hide-2),var(--hide));
+  color:var(--tan);text-align:center;position:relative}
+.f-photo .ring{width:88px;height:88px;border:1px solid var(--tan);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-family:var(--ff-d);font-size:2.4rem;color:var(--tan)}
+.f-photo small{position:absolute;bottom:16px;left:0;right:0;font-size:.62rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--parch);opacity:.55}
+.f-card .fb{padding:clamp(18px,2vw,26px)}
+.f-card h3{font-size:1.7rem}
+.f-card .role{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ochre);margin:.3em 0 .8em}
+.f-card p{font-size:.88rem;color:rgba(244,236,220,.75)}
+
+/* ==== ORDER ==== */
+.order-cta{background:
+  linear-gradient(180deg,rgba(36,22,16,.5),rgba(36,22,16,.92)),
+  url('./assets/backpack-detail.jpeg') center/cover;
+  border-top:1px solid var(--line)}
+.order-cta .wrap{padding-block:clamp(60px,10vw,130px);text-align:center}
+.order-cta h2{font-size:clamp(2.8rem,8vw,6rem);margin-bottom:.25em}
+.order-cta p{max-width:44ch;margin:0 auto 2rem;color:var(--parch)}
+.order-cta .row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.wa-lg{display:inline-flex;align-items:center;gap:.6em;background:var(--tan);color:var(--hide);
+  font-weight:700;padding:.95em 1.7em;border-radius:2px;font-size:1rem;transition:.2s}
+.wa-lg:hover{background:var(--ochre);transform:translateY(-2px)}
+.wa-lg svg{width:20px;height:20px}
+.ig-lg{display:inline-flex;align-items:center;gap:.6em;border:1px solid var(--parch);color:var(--parch);
+  padding:.95em 1.7em;border-radius:2px;font-weight:500;transition:.2s}
+.ig-lg:hover{background:var(--parch);color:var(--hide)}
+.ig-lg svg{width:20px;height:20px}
+
+/* ==== FOOTER ==== */
+footer{border-top:1px solid var(--line);padding-block:clamp(34px,5vw,56px)}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:1.4rem;flex-wrap:wrap}
+.foot .brand small{color:var(--tan)}
+.foot-meta{font-size:.78rem;color:rgba(244,236,220,.55);text-align:right}
+.foot-meta a{color:var(--ochre)}
+.byline{margin-top:1.4rem;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(244,236,220,.4)}
+
+/* ==== REVEAL ==== */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ==== RESPONSIVE ==== */
+@media(max-width:900px){
+  .nav-links{position:fixed;inset:66px 0 auto 0;flex-direction:column;gap:0;
+    background:var(--hide);border-bottom:1px solid var(--line);
+    transform:translateY(-120%);transition:transform .35s ease;padding:1rem 0}
+  .nav-links.open{transform:none}
+  .nav-links a{padding:1rem clamp(20px,5vw,56px);width:100%;border-bottom:1px solid var(--line)}
+  .nav-links .wa-btn{margin:1rem clamp(20px,5vw,56px);justify-content:center}
+  .burger{display:block}
+  .story{grid-template-columns:1fr}
+  .story-media{order:-1;max-width:440px}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .card,.card.wide{grid-column:span 1}
+  .craft-grid{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none;transition:none}
+  .card .ph img{transition:none}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand">Ingqanga<small>NYRAK Leather</small></a>
+    <nav class="nav-links" id="menu">
+      <a href="#story">Story</a>
+      <a href="#collection">Collection</a>
+      <a href="#craft">Craft</a>
+      <a href="#founders">Makers</a>
+      <a class="wa-btn" data-wa data-msg="Molo Ingqanga — I'd like to order a piece." href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
+        WhatsApp
+      </a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-img"><img src="./assets/hero-set.jpeg" alt="Indigo leather satchel with cowrie shell jewellery set" /></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow reveal">
+      <svg viewBox="0 0 24 16" fill="currentColor"><ellipse cx="12" cy="8" rx="11" ry="6.5" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M12 3.2c-1.2 1.4-1.2 8-.0 9.6M9.4 5.2c1.6.9 3.6.9 5.2 0M9.4 10.8c1.6-.9 3.6-.9 5.2 0" stroke="currentColor" stroke-width="1" fill="none"/></svg>
+      Handmade Leather · South Africa
+    </span>
+    <h1 class="reveal">Ingqanga</h1>
+    <p class="lede reveal">Leather that carries a lineage.</p>
+    <p class="sub reveal">Every piece is cut, tooled and saddle-stitched by hand from full-grain hide — finished with cowrie and a hand-burned motif. No two are ever the same.</p>
+    <div class="hero-cta reveal">
+      <a class="wa-lg" data-wa data-msg="Molo Ingqanga — I'd like to order a piece." href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
+        Order on WhatsApp
+      </a>
+      <a class="btn-ghost" href="#collection">See the collection</a>
+    </div>
+  </div>
+</section>
+
+<!-- GLYPH RULE -->
+<div class="wrap">
+  <div class="glyph-rule" aria-hidden="true">
+    <span class="ln"></span>
+    <svg viewBox="0 0 220 40" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+      <path d="M8 20c8-14 16 14 24 0M40 20c6-10 12 10 18 0"/>
+      <circle cx="72" cy="20" r="4"/>
+      <path d="M86 8v24M96 12l8 16M104 12l-8 16"/>
+      <path d="M120 20c9-16 18 16 27 0"/>
+      <circle cx="158" cy="14" r="2.4" fill="currentColor" stroke="none"/><circle cx="158" cy="26" r="2.4" fill="currentColor" stroke="none"/>
+      <path d="M172 20c8-14 16 14 24 0M204 12v16"/>
+    </svg>
+    <span class="ln"></span>
+  </div>
+</div>
+
+<!-- STORY -->
+<section class="story wrap" id="story">
+  <div class="reveal">
+    <span class="eyebrow">The House</span>
+    <h2>Born of hide<br>and <em>patience</em>.</h2>
+    <p>Ingqanga is slow leatherwork in the African grain. We start with full-grain hide — the strongest, most honest cut — and let the maker's hand do the rest: cut, bevel, burnish, stitch. The saddle stitch you see is sewn one needle at a time, so it never unravels the way a machine seam does.</p>
+    <p>Our mark is the cowrie and the hand-burned glyph — old currency and old language, carried forward on pieces built to outlast the trend that inspired them.</p>
+    <div class="facts">
+      <div><b>100%</b><span>Full-grain hide</span></div>
+      <div><b>Hand</b><span>Saddle-stitched</span></div>
+      <div><b>1 of 1</b><span>Every piece</span></div>
+    </div>
+  </div>
+  <div class="story-media reveal">
+    <img src="./assets/backpack-side.jpeg" alt="Tan full-grain leather backpack, hand-stitched" />
+    <img class="stamp" src="./assets/logo-patch.jpeg" alt="Hand-signed NYRAK Leather maker's mark" />
+  </div>
+</section>
+
+<!-- COLLECTION -->
+<section class="wrap" id="collection">
+  <div class="section-head reveal">
+    <h2>The Collection</h2>
+    <p>Made to order. Tap a piece to start it on WhatsApp — colour and sizing are yours to choose.</p>
+  </div>
+
+  <div class="grid">
+    <!-- Backpack (wide feature) -->
+    <article class="card wide reveal">
+      <span class="tagpx">Full-grain</span>
+      <div class="ph"><img src="./assets/backpack-back.jpeg" alt="Tan leather backpack, adjustable straps, back view" /></div>
+      <div class="body">
+        <h3>The Explorer Backpack</h3>
+        <p class="desc">Structured twin-zip backpack in tan full-grain, tooled spine motif, adjustable shoulder straps and a top carry handle.</p>
+        <a class="order" data-wa data-msg="Molo Ingqanga — I'm interested in The Explorer Backpack (tan). Is it available?" href="#">Enquire on WhatsApp
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Indigo satchel (tall) -->
+    <article class="card tall reveal">
+      <span class="tagpx">Indigo</span>
+      <div class="ph"><img src="./assets/satchel-navy-front.jpeg" alt="Indigo leather crossbody satchel, flap front" /></div>
+      <div class="body">
+        <h3>Indigo Satchel</h3>
+        <p class="desc">Deep indigo crossbody with hand-signed flap and adjustable strap.</p>
+        <a class="order" data-wa data-msg="Molo Ingqanga — I'm interested in the Indigo Satchel. Is it available?" href="#">Enquire on WhatsApp
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Caiman flap -->
+    <article class="card tall reveal">
+      <span class="tagpx">Statement</span>
+      <div class="ph"><img src="./assets/satchel-croc-black.jpeg" alt="Black leather crossbody with croc-textured 3D flap and studs" /></div>
+      <div class="body">
+        <h3>Caiman Flap Satchel</h3>
+        <p class="desc">Jet-black crossbody with a sculpted croc-textured flap and dome studs.</p>
+        <a class="order" data-wa data-msg="Molo Ingqanga — I'm interested in the Caiman Flap Satchel (black). Is it available?" href="#">Enquire on WhatsApp
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Waist bag (wide feature) -->
+    <article class="card wide reveal">
+      <span class="tagpx">Rose hide</span>
+      <div class="ph"><img src="./assets/waist-worn.jpeg" alt="Rose leather waist bag worn across the body" /></div>
+      <div class="body">
+        <h3>The Waist Bag</h3>
+        <p class="desc">Sling it at the hip or across the chest. Rose-dyed hide, zip pocket, tooled name tag and a fully adjustable strap.</p>
+        <a class="order" data-wa data-msg="Molo Ingqanga — I'm interested in The Waist Bag (rose). Is it available?" href="#">Enquire on WhatsApp
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Wallet -->
+    <article class="card reveal">
+      <div class="ph"><img src="./assets/wallet-loaded.jpeg" alt="Two-tone leather card wallet with zip coin pocket" /></div>
+      <div class="body">
+        <h3>Card Wallet</h3>
+        <p class="desc">Slim two-tone bifold with a zip coin pocket and snap tab.</p>
+        <a class="order" data-wa data-msg="Molo Ingqanga — I'm interested in the Card Wallet. Is it available?" href="#">Enquire
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Coin purse -->
+    <article class="card reveal">
+      <div class="ph"><img src="./assets/coin-purse-closed.jpeg" alt="Rose leather snap coin purse" /></div>
+      <div class="body">
+        <h3>Coin Purse</h3>
+        <p class="desc">Rounded flap purse with a snap close and belt loop.</p>
+        <a class="order" data-wa data-msg="Molo Ingqanga — I'm interested in the Coin Purse. Is it available?" href="#">Enquire
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Cowrie jewellery (wide) -->
+    <article class="card wide reveal">
+      <span class="tagpx">Cowrie</span>
+      <div class="ph"><img src="./assets/hero-set.jpeg" alt="Leather cowrie shell earrings, cuff and choker set" /></div>
+      <div class="body">
+        <h3>Cowrie Jewellery Set</h3>
+        <p class="desc">Hand-cut leather earrings, cuff and choker set with real cowrie shells — the old currency, worn new.</p>
+        <a class="order" data-wa data-msg="Molo Ingqanga — I'm interested in the Cowrie Jewellery Set. Is it available?" href="#">Enquire on WhatsApp
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- CRAFT -->
+<section class="craft" id="craft">
+  <div class="wrap">
+    <span class="eyebrow reveal">The Hand</span>
+    <h2 class="reveal">Every mark is <em>deliberate</em>.</h2>
+    <p class="intro reveal">Machines make many. Hands make one at a time — and it shows in the burnished edges, the even saddle stitch, and the signed maker's mark on the inside of each piece.</p>
+    <div class="craft-grid">
+      <div class="craft-tile reveal">
+        <img src="./assets/logo-patch.jpeg" alt="Hand-signed maker's mark stitched inside a bag" />
+        <h3>The maker's mark</h3>
+        <p>Every piece is signed by hand and stitched in, not printed on.</p>
+      </div>
+      <div class="craft-tile reveal">
+        <img src="./assets/backpack-detail.jpeg" alt="Hand-burned African glyph motif on tan leather" />
+        <h3>The glyph</h3>
+        <p>A hand-burned motif runs the seam — old language on new leather.</p>
+      </div>
+      <div class="craft-tile reveal">
+        <img src="./assets/waist-detail.jpeg" alt="Saddle stitch and solid brass ring hardware" />
+        <h3>Built to hold</h3>
+        <p>Saddle-stitched with waxed thread and solid rings that take the weight.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDERS -->
+<section class="founders" id="founders">
+  <div class="wrap">
+    <span class="eyebrow reveal">The Makers</span>
+    <h2 class="reveal">Hands behind the hide.</h2>
+    <p class="lede reveal">Ingqanga is a small workshop with a big name to live up to. Meet the people who cut, dye and stitch every order.</p>
+    <div class="f-grid">
+      <article class="f-card reveal">
+        <div class="f-photo"><div class="ring">I</div><small>Portrait to be added</small></div>
+        <div class="fb"><h3>Founder</h3><div class="role">Maker & Owner</div>
+          <p>Short founder bio goes here — send your photo and a few lines and we'll drop them straight in.</p></div>
+      </article>
+      <article class="f-card reveal">
+        <div class="f-photo"><div class="ring">N</div><small>Portrait to be added</small></div>
+        <div class="fb"><h3>Co-Founder</h3><div class="role">Craft & Design</div>
+          <p>Short bio goes here — same as above, ready for your words and picture.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER -->
+<section class="order-cta" id="order">
+  <div class="wrap">
+    <span class="eyebrow reveal">Made to order</span>
+    <h2 class="reveal">Start your piece.</h2>
+    <p class="reveal">Tell us the piece, the colour and the size. We'll confirm the price and lead time on WhatsApp, then make it by hand — just for you.</p>
+    <div class="row reveal">
+      <a class="wa-lg" data-wa data-msg="Molo Ingqanga — I'd like to order a piece." href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
+        Order on WhatsApp
+      </a>
+      <a class="ig-lg" href="https://www.instagram.com/ingqanga" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+        @ingqanga
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a href="#top" class="brand">Ingqanga<small>NYRAK Leather</small></a>
+      <div class="foot-meta">
+        Handmade leather · South Africa<br>
+        <a href="https://www.instagram.com/ingqanga" target="_blank" rel="noopener">@ingqanga</a> ·
+        <a data-wa data-msg="Molo Ingqanga — I have a question." href="#">WhatsApp</a>
+      </div>
+    </div>
+    <div class="byline">Site by Business Hustle</div>
+  </div>
+</footer>
+
+<script>
+/* ====== CONFIG — set your WhatsApp number here (country code, no + or spaces) ====== */
+const WHATSAPP_NUMBER = "27XXXXXXXXX"; // e.g. 27821234567
+/* ================================================================================= */
+
+// Build every WhatsApp link with a pre-filled message
+document.querySelectorAll('[data-wa]').forEach(el=>{
+  const msg = encodeURIComponent(el.dataset.msg || "Molo Ingqanga!");
+  el.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;
+  el.target = "_blank"; el.rel = "noopener";
+});
+
+// Mobile menu
+const burger=document.getElementById('burger'), menu=document.getElementById('menu');
+burger.addEventListener('click',()=>{
+  const open=menu.classList.toggle('open');
+  burger.setAttribute('aria-expanded',open);
+});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+
+// Scroll reveal
+const io=new IntersectionObserver((es)=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+},{threshold:.14,rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
