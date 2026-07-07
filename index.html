@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ingqanga — Handmade Leather, South Africa</title>
-<meta name="description" content="Ingqanga by NYRAK Leather. Full-grain leather cut, tooled and saddle-stitched by hand in South Africa. Backpacks, satchels, waist bags, wallets and cowrie jewellery. Order on WhatsApp." />
-<meta property="og:title" content="Ingqanga — Handmade Leather" />
+<title>NyRak Leather — Handmade, South Africa</title>
+<meta name="description" content="NyRak Leather. Full-grain leather cut, tooled and saddle-stitched by hand in South Africa. Backpacks, satchels, waist bags, wallets and cowrie jewellery. Order on WhatsApp." />
+<meta property="og:title" content="NyRak Leather — Handmade" />
 <meta property="og:description" content="Full-grain leather, stitched by hand, marked with African soul." />
 <meta property="og:image" content="./assets/hero-set.jpeg" />
 <meta name="theme-color" content="#241610" />
@@ -162,6 +162,11 @@ header{position:sticky;top:0;z-index:50;
 .f-card .role{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ochre);margin:.3em 0 .8em}
 .f-card p{font-size:.88rem;color:rgba(244,236,220,.75)}
 
+.makers-feature{grid-template-columns:1fr}
+.makers-feature .f-card{display:grid;grid-template-columns:1fr 1fr;align-items:center}
+.makers-feature .f-card img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1}
+@media(max-width:700px){.makers-feature .f-card{grid-template-columns:1fr}}
+
 /* ==== ORDER ==== */
 .order-cta{background:
   linear-gradient(180deg,rgba(36,22,16,.5),rgba(36,22,16,.92)),
@@ -221,13 +226,13 @@ footer{border-top:1px solid var(--line);padding-block:clamp(34px,5vw,56px)}
 <!-- NAV -->
 <header>
   <div class="wrap nav">
-    <a href="#top" class="brand">Ingqanga<small>NYRAK Leather</small></a>
+    <a href="#top" class="brand">NyRak<small>Leather</small></a>
     <nav class="nav-links" id="menu">
       <a href="#story">Story</a>
       <a href="#collection">Collection</a>
       <a href="#craft">Craft</a>
       <a href="#founders">Makers</a>
-      <a class="wa-btn" data-wa data-msg="Molo Ingqanga — I'd like to order a piece." href="#">
+      <a class="wa-btn" data-wa data-msg="Molo NyRak Leather — I'd like to order a piece." href="#">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
         WhatsApp
       </a>
@@ -246,11 +251,11 @@ footer{border-top:1px solid var(--line);padding-block:clamp(34px,5vw,56px)}
       <svg viewBox="0 0 24 16" fill="currentColor"><ellipse cx="12" cy="8" rx="11" ry="6.5" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M12 3.2c-1.2 1.4-1.2 8-.0 9.6M9.4 5.2c1.6.9 3.6.9 5.2 0M9.4 10.8c1.6-.9 3.6-.9 5.2 0" stroke="currentColor" stroke-width="1" fill="none"/></svg>
       Handmade Leather · South Africa
     </span>
-    <h1 class="reveal">Ingqanga</h1>
+    <h1 class="reveal">NyRak</h1>
     <p class="lede reveal">Leather that carries a lineage.</p>
     <p class="sub reveal">Every piece is cut, tooled and saddle-stitched by hand from full-grain hide — finished with cowrie and a hand-burned motif. No two are ever the same.</p>
     <div class="hero-cta reveal">
-      <a class="wa-lg" data-wa data-msg="Molo Ingqanga — I'd like to order a piece." href="#">
+      <a class="wa-lg" data-wa data-msg="Molo NyRak Leather — I'd like to order a piece." href="#">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
         Order on WhatsApp
       </a>
@@ -280,7 +285,7 @@ footer{border-top:1px solid var(--line);padding-block:clamp(34px,5vw,56px)}
   <div class="reveal">
     <span class="eyebrow">The House</span>
     <h2>Born of hide<br>and <em>patience</em>.</h2>
-    <p>Ingqanga is slow leatherwork in the African grain. We start with full-grain hide — the strongest, most honest cut — and let the maker's hand do the rest: cut, bevel, burnish, stitch. The saddle stitch you see is sewn one needle at a time, so it never unravels the way a machine seam does.</p>
+    <p>NyRak Leather is slow leatherwork in the African grain. We start with full-grain hide — the strongest, most honest cut — and let the maker's hand do the rest: cut, bevel, burnish, stitch. The saddle stitch you see is sewn one needle at a time, so it never unravels the way a machine seam does.</p>
     <p>Our mark is the cowrie and the hand-burned glyph — old currency and old language, carried forward on pieces built to outlast the trend that inspired them.</p>
     <div class="facts">
       <div><b>100%</b><span>Full-grain hide</span></div>
@@ -309,7 +314,7 @@ footer{border-top:1px solid var(--line);padding-block:clamp(34px,5vw,56px)}
       <div class="body">
         <h3>The Explorer Backpack</h3>
         <p class="desc">Structured twin-zip backpack in tan full-grain, tooled spine motif, adjustable shoulder straps and a top carry handle.</p>
-        <a class="order" data-wa data-msg="Molo Ingqanga — I'm interested in The Explorer Backpack (tan). Is it available?" href="#">Enquire on WhatsApp
+        <a class="order" data-wa data-msg="Molo NyRak Leather — I'm interested in The Explorer Backpack (tan). Is it available?" href="#">Enquire on WhatsApp
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
         </a>
       </div>
@@ -322,7 +327,7 @@ footer{border-top:1px solid var(--line);padding-block:clamp(34px,5vw,56px)}
       <div class="body">
         <h3>Indigo Satchel</h3>
         <p class="desc">Deep indigo crossbody with hand-signed flap and adjustable strap.</p>
-        <a class="order" data-wa data-msg="Molo Ingqanga — I'm interested in the Indigo Satchel. Is it available?" href="#">Enquire on WhatsApp
+        <a class="order" data-wa data-msg="Molo NyRak Leather — I'm interested in the Indigo Satchel. Is it available?" href="#">Enquire on WhatsApp
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
         </a>
       </div>
@@ -335,7 +340,7 @@ footer{border-top:1px solid var(--line);padding-block:clamp(34px,5vw,56px)}
       <div class="body">
         <h3>Caiman Flap Satchel</h3>
         <p class="desc">Jet-black crossbody with a sculpted croc-textured flap and dome studs.</p>
-        <a class="order" data-wa data-msg="Molo Ingqanga — I'm interested in the Caiman Flap Satchel (black). Is it available?" href="#">Enquire on WhatsApp
+        <a class="order" data-wa data-msg="Molo NyRak Leather — I'm interested in the Caiman Flap Satchel (black). Is it available?" href="#">Enquire on WhatsApp
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
         </a>
       </div>
@@ -348,7 +353,7 @@ footer{border-top:1px solid var(--line);padding-block:clamp(34px,5vw,56px)}
       <div class="body">
         <h3>The Waist Bag</h3>
         <p class="desc">Sling it at the hip or across the chest. Rose-dyed hide, zip pocket, tooled name tag and a fully adjustable strap.</p>
-        <a class="order" data-wa data-msg="Molo Ingqanga — I'm interested in The Waist Bag (rose). Is it available?" href="#">Enquire on WhatsApp
+        <a class="order" data-wa data-msg="Molo NyRak Leather — I'm interested in The Waist Bag (rose). Is it available?" href="#">Enquire on WhatsApp
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
         </a>
       </div>
@@ -360,7 +365,7 @@ footer{border-top:1px solid var(--line);padding-block:clamp(34px,5vw,56px)}
       <div class="body">
         <h3>Card Wallet</h3>
         <p class="desc">Slim two-tone bifold with a zip coin pocket and snap tab.</p>
-        <a class="order" data-wa data-msg="Molo Ingqanga — I'm interested in the Card Wallet. Is it available?" href="#">Enquire
+        <a class="order" data-wa data-msg="Molo NyRak Leather — I'm interested in the Card Wallet. Is it available?" href="#">Enquire
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
         </a>
       </div>
@@ -372,7 +377,7 @@ footer{border-top:1px solid var(--line);padding-block:clamp(34px,5vw,56px)}
       <div class="body">
         <h3>Coin Purse</h3>
         <p class="desc">Rounded flap purse with a snap close and belt loop.</p>
-        <a class="order" data-wa data-msg="Molo Ingqanga — I'm interested in the Coin Purse. Is it available?" href="#">Enquire
+        <a class="order" data-wa data-msg="Molo NyRak Leather — I'm interested in the Coin Purse. Is it available?" href="#">Enquire
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
         </a>
       </div>
@@ -385,7 +390,7 @@ footer{border-top:1px solid var(--line);padding-block:clamp(34px,5vw,56px)}
       <div class="body">
         <h3>Cowrie Jewellery Set</h3>
         <p class="desc">Hand-cut leather earrings, cuff and choker set with real cowrie shells — the old currency, worn new.</p>
-        <a class="order" data-wa data-msg="Molo Ingqanga — I'm interested in the Cowrie Jewellery Set. Is it available?" href="#">Enquire on WhatsApp
+        <a class="order" data-wa data-msg="Molo NyRak Leather — I'm interested in the Cowrie Jewellery Set. Is it available?" href="#">Enquire on WhatsApp
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
         </a>
       </div>
@@ -424,17 +429,15 @@ footer{border-top:1px solid var(--line);padding-block:clamp(34px,5vw,56px)}
   <div class="wrap">
     <span class="eyebrow reveal">The Makers</span>
     <h2 class="reveal">Hands behind the hide.</h2>
-    <p class="lede reveal">Ingqanga is a small workshop with a big name to live up to. Meet the people who cut, dye and stitch every order.</p>
-    <div class="f-grid">
+    <p class="lede reveal">NyRak Leather is a small workshop where every piece is cut, dyed and stitched to order. Meet the people who cut, dye and stitch every order.</p>
+    <div class="f-grid makers-feature">
       <article class="f-card reveal">
-        <div class="f-photo"><div class="ring">I</div><small>Portrait to be added</small></div>
-        <div class="fb"><h3>Founder</h3><div class="role">Maker & Owner</div>
-          <p>Short founder bio goes here — send your photo and a few lines and we'll drop them straight in.</p></div>
-      </article>
-      <article class="f-card reveal">
-        <div class="f-photo"><div class="ring">N</div><small>Portrait to be added</small></div>
-        <div class="fb"><h3>Co-Founder</h3><div class="role">Craft & Design</div>
-          <p>Short bio goes here — same as above, ready for your words and picture.</p></div>
+        <img src="./assets/makers.jpg" alt="Kameron and BaKaNtu, the makers behind NyRak Leather" />
+        <div class="fb">
+          <h3>Kameron &amp; BaKaNtu</h3>
+          <div class="role">The hands behind NyRak</div>
+          <p>Two makers, one workshop. Kameron and BaKaNtu cut, dye and hand-stitch every piece to order — so the bag you carry was made by the people you can talk to.</p>
+        </div>
       </article>
     </div>
   </div>
@@ -447,13 +450,13 @@ footer{border-top:1px solid var(--line);padding-block:clamp(34px,5vw,56px)}
     <h2 class="reveal">Start your piece.</h2>
     <p class="reveal">Tell us the piece, the colour and the size. We'll confirm the price and lead time on WhatsApp, then make it by hand — just for you.</p>
     <div class="row reveal">
-      <a class="wa-lg" data-wa data-msg="Molo Ingqanga — I'd like to order a piece." href="#">
+      <a class="wa-lg" data-wa data-msg="Molo NyRak Leather — I'd like to order a piece." href="#">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4 0 .5l-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.4 1.9 2.3 1.3 1.1 2 1.3 2.3 1.5.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
         Order on WhatsApp
       </a>
-      <a class="ig-lg" href="https://www.instagram.com/ingqanga" target="_blank" rel="noopener">
+      <a class="ig-lg" data-ig href="#">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
-        @ingqanga
+        Instagram
       </a>
     </div>
   </div>
@@ -463,11 +466,11 @@ footer{border-top:1px solid var(--line);padding-block:clamp(34px,5vw,56px)}
 <footer>
   <div class="wrap">
     <div class="foot">
-      <a href="#top" class="brand">Ingqanga<small>NYRAK Leather</small></a>
+      <a href="#top" class="brand">NyRak<small>Leather</small></a>
       <div class="foot-meta">
         Handmade leather · South Africa<br>
-        <a href="https://www.instagram.com/ingqanga" target="_blank" rel="noopener">@ingqanga</a> ·
-        <a data-wa data-msg="Molo Ingqanga — I have a question." href="#">WhatsApp</a>
+        <a data-ig href="#">Instagram</a> ·
+        <a data-wa data-msg="Molo NyRak Leather — I have a question." href="#">WhatsApp</a>
       </div>
     </div>
     <div class="byline">Site by Business Hustle</div>
@@ -476,15 +479,18 @@ footer{border-top:1px solid var(--line);padding-block:clamp(34px,5vw,56px)}
 
 <script>
 /* ====== CONFIG — set your WhatsApp number here (country code, no + or spaces) ====== */
-const WHATSAPP_NUMBER = "27XXXXXXXXX"; // e.g. 27821234567
+const WHATSAPP_NUMBER = "27761766931"; // e.g. 27821234567
+const INSTAGRAM_URL  = "https://www.instagram.com/ingqanga"; // NyRak Leather IG (not the band)
 /* ================================================================================= */
 
 // Build every WhatsApp link with a pre-filled message
 document.querySelectorAll('[data-wa]').forEach(el=>{
-  const msg = encodeURIComponent(el.dataset.msg || "Molo Ingqanga!");
+  const msg = encodeURIComponent(el.dataset.msg || "Molo NyRak Leather!");
   el.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;
   el.target = "_blank"; el.rel = "noopener";
 });
+
+document.querySelectorAll("[data-ig]").forEach(el=>{ el.href=INSTAGRAM_URL; el.target="_blank"; el.rel="noopener"; });
 
 // Mobile menu
 const burger=document.getElementById('burger'), menu=document.getElementById('menu');
